@@ -1,12 +1,12 @@
 import React from 'react'
 import Info from './servicesComponents/Info'
-import Slide from './servicesComponents/Slide'
+import SlideComponent from './servicesComponents/Slide'
 
 const ServicesComponent = () => {
   return (
-    <article>
+    <article className='w-[90%] my-0 mx-auto flex items-center justify-center max-md:flex-col'>
         <Info/>
-        <Slide/>
+        <SlideComponent/>
     </article>
   )
 }

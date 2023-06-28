@@ -5,6 +5,6 @@ export default function robots() {
         allow: '/',
         disallow: '/private/',
       },
-      sitemap: 'https://tech-test.vercel.app/sitemap.xml',
+      sitemap: 'https://tech-test-two.vercel.app/sitemap.xml',
     }
   }
