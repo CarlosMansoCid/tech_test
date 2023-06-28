@@ -11,8 +11,8 @@ export default function Home() {
   const {services, isLoading} = useServices()
   console.log(services, isLoading)
   return (
-    <section>
-      {/* <NavbarComponent/> */}
+    <section className='relative'>
+      <NavbarComponent/>
       <HeroComponent/>
       <ServicesComponent/>
       <AboutUsComponent/>

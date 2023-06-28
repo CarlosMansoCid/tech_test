@@ -9,13 +9,13 @@ import {FaBars, FaTimes} from 'react-icons/fa'
 
 const NavbarComponent = () => {
 
-  const [value, toogle] = useToogle()
+  const [value, setTrue, setFalse, toogle] = useToogle()
 
 
   return (
     <NavbarLayout>
-        <NavBarLinks value={value}/>
-        <div  className='lg:hidden font text-mediumBlue hover:text-darkBlue cursor-pointer duration-300' onClick={toogle} >
+        <NavBarLinks value={value} toogle={toogle}/>
+        <div  className='md:hidden font text-mediumBlue hover:text-darkBlue cursor-pointer duration-300' onClick={toogle} >
           {value ?  <FaTimes/> : <FaBars/>}
         </div>
 

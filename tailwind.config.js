@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        '3xl': ' 2px 6px 16px 0px  #709DDA;',
+        '3xl': ' 2px 6px 7px 0px  #709DDA;',
       }
     },
     colors: {
