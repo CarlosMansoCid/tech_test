@@ -1,16 +1,21 @@
 import { useState } from "react"
 
-const useToogle = (initialState = false) => {
+const useToogle = () => {
 
-    const [value, setValue] = useState(initialState)
+    const [value, setValue] = useState(false)
 
 
-    const toogle = () =>{
-        setValue(!value)
+    const setTrue = () =>{
+        setValue(true)
     }
+    const setFalse = () =>{
+      setValue(false)
+    }
+    const toogle= () =>{
+      setValue(!value)
+  }
 
-    console.log(value)
-  return [value, toogle]
+  return [value, setTrue, setFalse, toogle]
 }
 
 export default useToogle

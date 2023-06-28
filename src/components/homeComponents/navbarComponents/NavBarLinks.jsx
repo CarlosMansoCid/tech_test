@@ -1,20 +1,19 @@
 'use client'
 import NavBarLink from "./NavBarLink";
 import { homeNavBarLinks } from "@/lib/homeNavBarLinks";
-import useToogle from "@/hooks/useToogle";
 
 
-const NavBarLinks = ({value}) => {
-  console.log(value)
+
+const NavBarLinks = ({value, toogle}) => {
   return (
-    <ul className={`flex text-center max-lg:flex-col max-lg:absolute  max-lg:bg-white 
-                     max-lg:top-${value ? '16' : '[-450px]'} max-lg:left-0  max-lg:z-10
-                     max-lg:p-2  max-lg:w-[100%] 
-                     max-lg:rounded-md  max-lg:text-left duration-100 `}>
+    <ul className={`flex text-center max-md:flex-col max-md:absolute  max-md:bg-white 
+                     top-${value === false ? '[-500rem]' : '0'} max-md:left-0  max-md:z-10
+                     max-md:p-2  max-lg:w-[100%] max-md:mt-[3.5rem]
+                     max-md:rounded-md  max-md:text-left duration-100 text-xs`}>
     {
       homeNavBarLinks.map(link =>{
         return(
-          <NavBarLink data={link}/>
+          <NavBarLink key={link.title} data={link} toogle={toogle}/>
         )
       })
     }

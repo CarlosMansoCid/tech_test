@@ -1,9 +1,12 @@
+'use client'
 import Link from "next/link"
 
-const NavBarLink = ({data}) => {
+
+const NavBarLink = ({data, toogle}) => {
+
   return (
-    <li>
-      <Link href={data.href} className='mx-3 hover:text-lightBlue duration-100 active:text-black '>{data.title}</Link>
+    <li onClick={toogle}>
+      <Link href={data.href} className='mx-6 hover:text-lightBlue duration-100 active:text-black '>{data.title}</Link>
     </li>
 
   )
