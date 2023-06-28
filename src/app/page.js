@@ -9,7 +9,9 @@ import useServices from '@/hooks/useServices'
 
 export default function Home() {
   const {services, isLoading} = useServices()
-  console.log(services, isLoading)
+  
+  
+
   return (
     <section className='relative'>
       <NavbarComponent/>
