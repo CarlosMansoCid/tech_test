@@ -1,6 +1,7 @@
 import React from 'react'
 import CallToAction from './heroComponents/CallToAction'
 import Image from 'next/image'
+import { FaArrowCircleDown } from 'react-icons/fa'
 
 const HeroComponent = () => {
   return (

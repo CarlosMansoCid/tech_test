@@ -1,7 +1,7 @@
 export default function sitemap() {
     return [
       {
-        url: 'https://tech-test.vercel.app',
+        url: 'https://tech-test-two.vercel.app',
         lastModified: new Date(),
       },
 

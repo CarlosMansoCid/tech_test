@@ -10,7 +10,17 @@ module.exports = {
     extend: {
       boxShadow: {
         '3xl': ' 2px 6px 7px 0px  #709DDA;',
+        'card': '0px 5px 11px -3px rgba(0,0,0,0.75);'
       }
+    },
+    keyframes: {
+      fade: {
+        '0%': { opacity: '0' },
+        '100%': { opacity: '1' },
+      }
+    },
+    animation: {
+      fade: 'fade .5s ease-in-out ',
     },
     colors: {
       transparent: 'transparent',

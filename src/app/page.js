@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import HeroComponent from '@/components/homeComponents/Hero.component'
+import HeroComponent from './serverCoponents/Hero.component'
 import ServicesComponent from '@/components/homeComponents/Services.component'
 import AboutUsComponent from '@/components/homeComponents/AboutUs.component'
 import FooterComponent from '@/components/homeComponents/Footer.component'
