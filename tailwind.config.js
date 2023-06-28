@@ -8,12 +8,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      boxShadow: {
+        '3xl': ' 2px 6px 7px 0px  #709DDA;',
+      }
     },
+    colors: {
+      transparent: 'transparent',
+      'darkBlue': '#001853',
+      'lightBlue': '#2E53A3',
+      'mediumBlue': '#2D509E',
+      'shadowBlue': '#709DDA',
+      'white' : '#ffffff',
+      'black' : '#000000'
+    },
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '900px',
+      xl: '1440px',
+    },
+
   },
   plugins: [],
 }
