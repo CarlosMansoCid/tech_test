@@ -1,12 +1,20 @@
 import FooterLayout from '@/layouts/Footer.layout'
-import React from 'react'
+import {Slide} from '@/components/clientAnimations/slideAnimation'
+import SocialLinks from './footerComponents/SocialLinks'
+import GithubLink from './footerComponents/GithubLink'
 
 const FooterComponent = () => {
   return (
     <FooterLayout>
-        footer
+      <Slide direction='up' className='duration-400 text-[1.2rem] mt-[.5rem]'  triggerOnce>
+        <div>Contacto</div>
+        <SocialLinks/>
+        <div className='text-[1.2rem] mt-[.5rem]'>Enlace al código fuente</div>
+        <GithubLink/>
+      </Slide>
     </FooterLayout>
   )
 }
+
 
 export default FooterComponent

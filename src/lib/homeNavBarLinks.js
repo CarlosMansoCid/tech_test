@@ -9,7 +9,7 @@ export const homeNavBarLinks = [
     },
     {
         title: 'NOSOTROS',
-        href: '#aboutUs'
+        href: '#aboutus'
     },
     {
         title: 'HERRAMIENTAS',
