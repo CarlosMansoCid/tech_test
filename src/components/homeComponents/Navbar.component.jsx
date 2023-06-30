@@ -3,7 +3,6 @@ import NavbarLayout from '@/layouts/Navbar.layout'
 import Button from '../buttons/Button'
 import NavBarLinks from './navbarComponents/NavBarLinks'
 import Translate from './navbarComponents/Translate'
-import { useState } from 'react'
 import useToogle from '@/hooks/useToogle'
 import {FaBars, FaTimes} from 'react-icons/fa'
 

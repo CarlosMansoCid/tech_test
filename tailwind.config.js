@@ -10,7 +10,13 @@ module.exports = {
     extend: {
       boxShadow: {
         '3xl': ' 2px 6px 7px 0px  #709DDA;',
-        'card': '0px 5px 11px -3px rgba(0,0,0,0.75);'
+        'card': '0px 5px 11px -3px rgba(0,0,0,0.75);',
+        'img1': ' -15px -15px 0px 0px #2D509E;',
+        'img2': ' 15px 15px 0px 0px  #0193fc;',
+
+      },
+    fill: {
+      current: 'currentColor',
       }
     },
     keyframes: {
