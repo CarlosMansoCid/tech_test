@@ -15,7 +15,7 @@ const Info = () => {
         <Title>Esta info te llega desde un servicio externo</Title>
         <SubTitle>Consultando el servicio en <br/>https://react-frontend.pages.dev/slides.json, debes usar Context para enviar los datos
         que necesitas en la seccion de abajo, a la derecha tiene un slide o carrusel.</SubTitle>
-        <Button className='px-7 hover:bg-mediumBlue active:bg-darkBlue duration-300 max-md:w-[100%] shadow-3xl text-white py-1 flex items-center justify-center bg-darkBlue'>
+        <Button className='px-7 rounded-2xl py-2  hover:bg-mediumBlue active:bg-darkBlue duration-300 max-md:w-[100%] shadow-3xl text-white py-1 flex items-center justify-center bg-darkBlue'>
           <span className='font-bold'>Ver mas </span>
           <FaArrowRight style={{marginLeft:'.3rem'}}/>
         </Button>

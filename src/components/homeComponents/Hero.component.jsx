@@ -11,7 +11,7 @@ const HeroComponent = () => {
       <section className='flex my-0 mx-auto  h-[100%] w-[90%] items-center justify-between text-white'>
         <CallToAction/> 
         <div className='w-[50%] h-[100%] absolute right-0 max-md:hidden'>
-          <Image src='/img/heroImg.png' fill={true} style={{top:'5rem', right:'0'}}/>
+          <Image src='/img/heroImg.png' alt='hero' fill={true} style={{top:'5rem', right:'0'}}/>
         </div>
       </section>
       <div className='bg-darkBlue z-10 w-[4rem] h-[4rem] left-[100px] absolute rotate-45 bottom-[-1rem]'/>
