@@ -1,5 +1,6 @@
+import './globals.css'
 import { Roboto } from 'next/font/google'
-
+import {NextIntlClientProvider} from 'next-intl';
 
 
 const roboto = Roboto({
@@ -9,6 +10,9 @@ const roboto = Roboto({
   display: 'swap',
 })
 
+export function generateStaticParams() {
+  return [{locale: 'en'}, {locale: 'es'}];
+}
 
 export const metadata = {
   title: 'Tech test | Home',
@@ -39,11 +43,21 @@ export const metadata = {
   },
 }
 
-export default async function RootLayout({ children}) {
+export default async function LocaleLayout({ children, ...props }) {
+
+  let messages;
+  try {
+    messages = (await import(`../messages/${props.params.locale}.json`)).default;
+  } catch (error) {
+    console.log(error)
+  }
+  
   return (
-    <html lang='es'>
+    <html lang={props.params.locale}>
       <body className={roboto.className}>
-        {children}
+        <NextIntlClientProvider locale={props.params.locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   )

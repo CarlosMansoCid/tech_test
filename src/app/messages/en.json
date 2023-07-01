@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "home": "HOME",
+        "services": "SERVICES",
+        "aboutus": "ABOUT US",
+        "tools": "TOOLS",
+        "partners": "PARTNERS"
+      },
+    "title": {
+        "title": "Only translate this wonderfull title and the navbar"
+    }
+
+
+}

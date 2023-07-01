@@ -6,7 +6,7 @@ import GithubLink from './footerComponents/GithubLink'
 const FooterComponent = () => {
   return (
     <FooterLayout>
-      <Slide direction='up' className='duration-400 text-[1.2rem] mt-[.5rem]'  triggerOnce>
+      <Slide direction='up' className='duration-400 text-[1.2rem] mt-[.5rem] mb-0'  triggerOnce>
         <div>Contacto</div>
         <SocialLinks/>
         <div className='text-[1.2rem] mt-[.5rem]'>Enlace al código fuente</div>
