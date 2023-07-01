@@ -16,8 +16,8 @@ useEffect(()=>{
 },[])
     
   return (
-    <Link href={`${lang === 'es' ? '/en' : '/es'}`} scroll={false}>
-      <Image src={lang === 'es' ? en : es} alt='lng' className='ml-4 h-5 cursor-pointer max-lg:h-4 max-lg:w-5'/>
+    <Link role='link' id='link' href={`${lang === 'es' ? '/en' : '/es'}`} scroll={false}>
+      <Image role='flag' src={lang === 'es' ? en : es} alt='lng' className='ml-4 h-5 cursor-pointer max-lg:h-4 max-lg:w-5'/>
     </Link>
   )
 }
