@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import es from '../../../../public/img/spanish.png'
 import en from '../../../../public/img/english.png'
 import Image from 'next/image'
@@ -8,16 +8,16 @@ import Link from 'next/link'
 
 const Translate = () => {
 
-    const [lang, setLang] = useState(es)
 
-
-    const toggleLang = () =>{
-        setLang(lang === es ? en : es)
-    }
+    const [lang, setLang] = useState()
+    
+useEffect(()=>{
+  setLang(window.location.pathname.split('/')[1])
+},[])
     
   return (
-    <Link href={`${lang === es ? '/es' : '/en'}`} scroll={false}>
-      <Image src={lang} alt='lng' className='ml-4 h-5 cursor-pointer max-lg:h-4 max-lg:w-5' onClick={()=>toggleLang()}/>
+    <Link href={`${lang === 'es' ? '/en' : '/es'}`} scroll={false}>
+      <Image src={lang === 'es' ? en : es} alt='lng' className='ml-4 h-5 cursor-pointer max-lg:h-4 max-lg:w-5'/>
     </Link>
   )
 }
