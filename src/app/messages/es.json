@@ -1,0 +1,12 @@
+{
+    "navbar": {
+      "home": "INICIO",
+      "services": "SERVICIOS",
+      "aboutus": "NOSOTROS",
+      "tools": "HERRAMIENTAS",
+      "partners": "SOCIOS"
+    },
+    "title": {
+        "title": "Traduce solo este título y el navbar"
+    }
+}

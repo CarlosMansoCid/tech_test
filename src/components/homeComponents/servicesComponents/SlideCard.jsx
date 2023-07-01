@@ -1,11 +1,10 @@
 'use client'
-import React from 'react'
 import Link from 'next/link'
 
 const SlideCard = ({data, active}) => {
 
   return (
-    <div className={`animate-fade shadow-card p-1 my-[.5rem] duration-300 mx-2  cursor-pointer 
+    <div className={`animate-fade shadow-card p-1 rounded-[5px] my-[1rem] duration-300 mx-2  cursor-pointer 
                     hover:bg-mediumBlue hover:text-white max-lg:w-[45%] w-[40%] overflow-hidden 
                     ${active ? 'flex flex-col' : 'hidden'} h-[20rem]` }>
       <div className='h-[45%] flex items-center'>
